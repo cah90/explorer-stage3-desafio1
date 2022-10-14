@@ -1,0 +1,212 @@
+:root {
+  --secondary-color: #535971;
+  --background: #E5E5E5;
+  --background-input: #FAFAFC;
+  --text: #4E4958;
+  --text-span: #a9a7af;
+  --button: #FF5374;
+  --button-hover: #fb3f65;
+  --white: #fff;
+
+  --poppins: 'Poppins', sans-serif;
+  --staaatliches: 'Staatliches', cursive;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--background);
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 368px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: var(--secondary-color);
+}
+
+.page {
+  width: 736px;
+  margin: auto;
+}
+
+header {
+  width: 319px;
+  margin-top: 74px;
+}
+
+header h1 {
+  font-family: var(--staaatliches);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+header p {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+form {
+  margin-top: 38px;
+  background: var(--white);
+  border-radius: 20px 20px 0 0;
+  min-height: 300px;
+
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+fieldset legend {
+  font-family: var(--staaatliches);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--secondary-color);
+
+  width: 100%;
+
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px;
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-wrapper label,
+.checkbox-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: var(--text);
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 12px;
+
+  font-size: 12px;
+  line-height: 20px;
+  
+  color: var(--text-span);
+}
+
+.input-wrapper label span:hover {
+  color: #6c6a71;
+}
+
+.input-wrapper input {
+  background: var(--background-input);
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  
+  height: 56px;
+
+  padding: 0 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #6c6a71;
+}
+
+
+.col-3 {
+  display: flex;
+  gap: 20px;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
+
+.mentorship h2 {
+  font-family: var(--staaatliches);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: var(--secondary-color);
+  margin-bottom: 11px;
+}
+
+
+footer {
+  background: var(--secondary-color);
+
+  height: 136px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 64px;
+
+  margin-bottom: 100px;
+
+  border-top: 1px solid #D6D6D6;
+  border-radius: 0 0 20px 20px;
+}
+
+footer .button {
+  height: 56px;
+  background: var(--button);
+  border: 0;
+  border-radius: 20px;
+
+  font-family: var(--staaatliches);
+
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1px;
+
+
+  color: var(--white);
+}
+
+footer .button:hover {
+  background: var(--button-hover);
+}
+
+input:invalid {
+ border: 1px solid #FF1010;
+}
